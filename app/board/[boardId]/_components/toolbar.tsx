@@ -1,6 +1,6 @@
 
 import { ToolButton } from "./tool-button";
-import { Circle, MousePointer2, Pencil, Redo, Square, StickyNote, Type, Undo } from "lucide-react";
+import { Circle, MousePointer2, Pencil, Redo2, Square, StickyNote, Type, Undo2 } from "lucide-react";
 import { CanvasMode, CanvasState, LayerType } from "@/types/canvas";
 
 
@@ -104,17 +104,17 @@ export const Toolbar = ({
 
             <div className="bg-white rounded-md p-1.5 flex flex-col items-center shadow-md">
                 <ToolButton 
-                label="Undo"
-                icon={Undo}
-                onClick={undo}
-                isDisabled={!canUndo}
+                    label="Undo"
+                    icon={Undo2}
+                    onClick={undo}
+                    isDisabled={!canUndo}
                />
 
                 <ToolButton 
-                label="Redo"
-                icon={Redo}
-                onClick={redo}
-                isDisabled={!canRedo}
+                    label="Redo"
+                    icon={Redo2}
+                    onClick={redo}
+                    isDisabled={!canRedo}
                />
 
             </div>
